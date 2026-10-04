@@ -45,7 +45,7 @@ class MessageHelper():
         messages.append({"role": "assistant", "content": text})
         return messages
 
-    def chat(self, messages: list[dict], system: str = None, stop_sequences: list[str] = None) -> str:
+    def chat(self, messages: list[dict], system: str = None, stop_sequences: list[str] = None, max_tokens: int = 1000) -> str:
         """Send the conversation to Claude and return its text reply.
 
         Args:
@@ -57,6 +57,8 @@ class MessageHelper():
             stop_sequences: Optional list of strings; generation stops as soon
                 as Claude would produce one, and the stop string itself is not
                 included in the returned text. Omitted when None or empty.
+            max_tokens: Maximum number of tokens (int) Claude may generate;
+                longer replies are cut off. Defaults to 1000.
 
         Returns:
             The text of Claude's first content block (str).
@@ -64,7 +66,7 @@ class MessageHelper():
         params = {
             "model": self.model,
             "messages": messages,
-            "max_tokens": 1000,
+            "max_tokens": max_tokens,
         }
 
         # Optional parameters are only added when provided, since the API

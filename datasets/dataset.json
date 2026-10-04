@@ -1,11 +1,43 @@
 [
   {
-    "task": "Write a Python function that takes an AWS S3 bucket name and returns True if it follows AWS naming conventions (lowercase, 3-63 characters, no underscores), False otherwise."
+    "task": "Create a 1-day meal plan for a 178cm, 82kg athlete aiming for muscle gain with no dietary restrictions",
+    "criteria": [
+      "Daily caloric total must be between 3,100 and 3,450 kcal",
+      "Protein intake must be between 164 and 182 grams",
+      "Carbohydrate intake must be between 413 and 457 grams",
+      "Fat intake must be between 103 and 114 grams",
+      "Meal plan must include at least 4 distinct meals or eating occasions",
+      "Each meal must specify exact foods with portion sizes (grams or standard units)",
+      "Meal timing should be provided for each eating occasion",
+      "All meals must be compatible with no dietary restrictions (omnivorous options acceptable)"
+    ]
   },
   {
-    "task": "Create a JSON object representing an AWS IAM policy that allows read-only access to a specific S3 bucket named 'my-data-bucket'."
+    "task": "Create a 1-day meal plan for a 165cm, 58kg athlete aiming for fat loss with a vegetarian dietary restriction",
+    "criteria": [
+      "Daily caloric total must be between 1,740 and 1,932 kcal",
+      "Protein intake must be between 116 and 128 grams",
+      "Carbohydrate intake must be between 174 and 192 grams",
+      "Fat intake must be between 58 and 64 grams",
+      "Meal plan must include at least 4 distinct meals or eating occasions",
+      "Each meal must specify exact foods with portion sizes (grams or standard units)",
+      "Meal timing should be provided for each eating occasion",
+      "All meals must be vegetarian with no meat, poultry, or fish products",
+      "Protein sources must come from eggs, dairy, legumes, nuts, seeds, or plant-based alternatives"
+    ]
   },
   {
-    "task": "Write a regex pattern that validates an AWS EC2 security group ID format (e.g., sg-0123456789abcdef0)."
+    "task": "Create a 1-day meal plan for a 188cm, 71kg athlete aiming for endurance performance with a vegan dietary restriction",
+    "criteria": [
+      "Daily caloric total must be between 2,665 and 2,958 kcal",
+      "Protein intake must be between 133 and 147 grams",
+      "Carbohydrate intake must be between 399 and 442 grams",
+      "Fat intake must be between 89 and 98 grams",
+      "Meal plan must include at least 4 distinct meals or eating occasions",
+      "Each meal must specify exact foods with portion sizes (grams or standard units)",
+      "Meal timing should be provided for each eating occasion, with emphasis on pre/during/post-workout nutrition",
+      "All meals must be vegan with no animal products including meat, poultry, fish, eggs, dairy, or honey",
+      "Protein sources must come exclusively from legumes, nuts, seeds, soy products, grains, or plant-based alternatives"
+    ]
   }
 ]
